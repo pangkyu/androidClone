@@ -26,7 +26,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/btn_WF_SRT"
+            app:srcCompat="@drawable/btn_srt"
             android:layout_weight="2"/>
 
         <ImageButton
@@ -73,7 +73,7 @@
         android:orientation="vertical"
         android:background="@color/background2">
 
-        <!--cotent 버튼 -->
+        <!--content 버튼 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -109,14 +109,14 @@
                     android:layout_height="30dp"
                     android:text="출발"
                     android:background="#ffffff"
-                    android:textSize="10dp"
+                    android:textSize="10sp"
                     android:textColor="#7f8c8d" />
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:background="#ffffff"
                     android:textColor="#000000"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:text="광주송정"/>
             </LinearLayout>
@@ -146,38 +146,132 @@
                     android:textStyle="bold"
                     android:text="수서"/>
             </LinearLayout>
+
+
         </LinearLayout>
 
         <!-- 출발일 선택 섹션 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+           >
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="출발일"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="#ffffff">
+                <ImageButton
+                    android:background="#ffffff"
+                    app:srcCompat="@drawable/calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+               />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="출발일"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000년 00월 01일"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00시"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이후"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 인원 선택 섹션 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0000년 00월 01일"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="어른"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="00시이후"
-                android:textColor="@color/black"/>
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="어린이"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="유아"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
+
+
+
+
     </LinearLayout>
-
-
-
-
-
 </LinearLayout>
