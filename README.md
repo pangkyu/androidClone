@@ -13,4 +13,4 @@
 
 ## 3. launch
 
-- cafe-casher-site\cafe-casher-site>npm start
+- download -> build on Android Studio -> start
