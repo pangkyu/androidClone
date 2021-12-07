@@ -5,46 +5,177 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context=".MainActivity">
 
+    <!-- 헤더바 코드 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/menu"
+            android:layout_weight="0.7"/>
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/btn_WF_SRT"
+            android:layout_weight="2"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:layout_weight="0.2"
+            app:srcCompat = "@drawable/robotic"/>
         <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat = "@drawable/account"
+            android:layout_weight="0.2"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+    <!-- 공지사항 코드-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="horizontal"
+        android:padding="3dp">
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainColor"
+            android:layout_marginLeft="30dp"
+            android:text="공지사항   |"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mainColor"
+            android:layout_marginLeft="24dp"
+            android:text="승차권 예발매일 조정 알림"/>
     </LinearLayout>
+
+    <!--content 부분 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/background2">
+
+        <!--cotent 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="편도"
+                android:background="@color/background2"
+                android:textColor="#000000"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background2"
+                android:textColor="#000000"
+                android:text="왕복"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <!--content 역 선택 섹션 -->
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="출발"
+                    android:background="#ffffff"
+                    android:textSize="10dp"
+                    android:textColor="#7f8c8d" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="광주송정"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="100dp"
+                android:src = "@drawable/change"/>
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="도착"
+                    android:background="#ffffff"
+                    android:textSize="10dp"
+                    android:textColor="#7f8c8d"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#ffffff"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="수서"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 출발일 선택 섹션 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출발일"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000년 00월 01일"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00시이후"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </LinearLayout>
 
 
 
