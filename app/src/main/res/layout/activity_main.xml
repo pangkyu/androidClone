@@ -13,8 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -76,7 +76,7 @@
         <!--content 버튼 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="30sp">
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -212,7 +212,6 @@
                 android:layout_weight="1">
 
                 <TextView
-                    android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="어른"
@@ -220,58 +219,330 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:padding="8sp">
 
                     <Button
-                        
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="-"/>
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
                     <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="+"/>
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:background="#ffffff"
                 android:layout_weight="1">
 
                 <TextView
-                    android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="어린이"
                     android:textColor="@color/black"/>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp">
+
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="+"/>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:background="#ffffff"
                 android:layout_weight="1">
 
                 <TextView
-                    android:layout_marginLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="유아"
                     android:textColor="@color/black"/>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp">
+
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="+"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경로"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp">
+
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="+"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="경증장애인"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp">
+
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="+"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="중증장애인"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp">
+
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="-"/>
+                    <TextView
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:gravity="center"/>
+                    <Button
+                        android:layout_width="35sp"
+                        android:layout_height="35sp"
+                        android:layout_weight="1"
+                        android:text="+"/>
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
 
+        <!-- 열차 조회 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/mainColor"
+                android:padding="2sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="열차 조회하기"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 사진 공지 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:src="@drawable/notipic"/>
+        </LinearLayout>
+
+        <!-- 배너 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:src="@drawable/banner"/>
+        </LinearLayout>
+        <!-- 푸터바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/train"
+                android:text="승차권 예매"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ticket1"
+                android:text="승차권 확인"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:background="@color/white"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ticket2"
+                android:text="정기/회수권"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/gift"
+                android:text="여행상품"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/black">
+            </TextView>
 
 
 
-
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>
