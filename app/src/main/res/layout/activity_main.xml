@@ -36,6 +36,7 @@
             android:layout_weight="0.2"
             app:srcCompat = "@drawable/robotic"/>
         <ImageButton
+            android:id="@+id/header_button"
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:srcCompat = "@drawable/account"
