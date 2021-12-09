@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 헤더바 코드 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/menu"
+            android:layout_weight="0.7"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승차권 확인"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="2"/>
+
+
+        <ImageButton
+            android:onClick="onClick"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat = "@drawable/cross"
+            android:layout_weight="0.3"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/background2"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승차권"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정기 승차권"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회수승차권"
+            android:padding="8dp"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- 푸터바 -->
+    <LinearLayout
+        android:layout_marginTop="525dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/train"
+            android:text="승차권 예매"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ticket1"
+            android:text="승차권 확인"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:background="@color/white"
+            android:textColor="@color/black">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ticket2"
+            android:text="정기/회수권"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black">
+
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/gift"
+            android:text="여행상품"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:textColor="@color/black">
+        </TextView>
+
+
+
+    </LinearLayout>
+</LinearLayout>

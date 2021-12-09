@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".SrtQuickMenu"/>
         <activity android:name=".StartDay"/>
+        <activity android:name=".CheckTicket"/>
     </application>
 
 
