@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,6 +48,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 푸터바 이벤트 리스너
+        TextView main_travel = (TextView) findViewById(R.id.main_travel);
+        main_travel.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                showTravelDialog();
+            }
+        });
     }
 
     // srt챗봇 메시지를 보여주는 함수
@@ -57,6 +67,15 @@ public class MainActivity extends AppCompatActivity {
                         "SRT 챗봇으로 이동하시겠습니까?")
                 .setPositiveButton("예", null)
                 .setNeutralButton("아니오", null);
+        AlertDialog msgDlg = msgBuilder.create();
+        msgDlg.show();
+    }
+
+    // 푸터바 여행상품 다이얼로그를 보여주는 함수
+    void showTravelDialog(){
+        AlertDialog.Builder msgBuilder = new AlertDialog.Builder(MainActivity.this)
+                .setMessage("시스템 점검중입니다.")
+                .setPositiveButton("확인", null);
         AlertDialog msgDlg = msgBuilder.create();
         msgDlg.show();
     }

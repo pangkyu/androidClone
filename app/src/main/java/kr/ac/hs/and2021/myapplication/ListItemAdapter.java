@@ -1,3 +1,5 @@
+// quick_menu.xml 을 위한 리스트뷰 자바 파일
+
 package kr.ac.hs.and2021.myapplication;
 
 import android.content.Context;

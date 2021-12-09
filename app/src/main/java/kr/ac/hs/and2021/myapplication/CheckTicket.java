@@ -1,3 +1,5 @@
+// 승차권 확인 페이지(자바)
+
 package kr.ac.hs.and2021.myapplication;
 
 import android.os.Bundle;

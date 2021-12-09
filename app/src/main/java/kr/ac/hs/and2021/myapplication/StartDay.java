@@ -1,3 +1,5 @@
+//start_day.xml 을 위한 파일
+
 package kr.ac.hs.and2021.myapplication;
 
 import android.os.Bundle;

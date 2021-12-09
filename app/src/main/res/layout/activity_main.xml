@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- 메인 페이지(승차권 예매) -->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -534,6 +537,7 @@
 
             </TextView>
             <TextView
+                android:id="@+id/main_travel"
                 android:layout_weight="1"
                 android:layout_width="100sp"
                 android:layout_height="wrap_content"

@@ -21,6 +21,8 @@
         <activity android:name=".SrtQuickMenu"/>
         <activity android:name=".StartDay"/>
         <activity android:name=".CheckTicket"/>
+        <activity android:name=".Tickets"/>
+
     </application>
 
 
