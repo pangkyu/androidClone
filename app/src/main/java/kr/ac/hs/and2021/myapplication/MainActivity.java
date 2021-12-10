@@ -13,6 +13,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -51,6 +53,25 @@ public class MainActivity extends AppCompatActivity {
 
         // 푸터바 이벤트 리스너
         TextView main_travel = (TextView) findViewById(R.id.main_travel);
+        TextView main_tickets = (TextView) findViewById(R.id.main_tickets);
+        TextView main_check = (TextView) findViewById(R.id.main_check);
+
+        main_tickets.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Tickets.class);
+                startActivity(intent);
+            }
+        });
+
+        main_check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CheckTicket.class);
+                startActivity(intent);
+            }
+        });
+
         main_travel.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){

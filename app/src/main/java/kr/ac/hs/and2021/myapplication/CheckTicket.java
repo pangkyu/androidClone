@@ -14,3 +14,4 @@ public class CheckTicket  extends AppCompatActivity {
         setContentView(R.layout.check_ticket);
     }
 }
+;
