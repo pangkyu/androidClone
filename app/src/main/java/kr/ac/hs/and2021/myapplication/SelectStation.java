@@ -5,6 +5,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -19,8 +20,10 @@ public class SelectStation extends AppCompatActivity {
 
     ImageView change_station;
     TextView start_station, end_station;
-    boolean changebtn, selected;
+    boolean changebtn, selected, start, end;
+    String str_start, str_end;
     ImageButton btn_srt, btn_korail;
+    Button select_1, select_2,select_3, select_4,select_5, select_6,select_7, select_8,select_9, select_10,select_11, select_12,select_13, select_14,select_15, select_16,select_17;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +36,30 @@ public class SelectStation extends AppCompatActivity {
         ImageButton btn_srt = (ImageButton) findViewById(R.id.btn_srt);
         ImageButton btn_korail = (ImageButton) findViewById(R.id.btn_korail);
 
+        // 교환섹션 이벤트 리스너
+        start_station.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                start = true;
+            }
+        });
+        end_station.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                end = true;
+            }
+        });
+        change_station.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String temporary;
+                start_station.setText(str_end);
+                end_station.setText(str_start);
+                temporary = str_end;
+                str_end = str_start;
+                str_start = temporary;
+            }
+        });
 
         // 클릭하면 on/off 기능
         btn_srt.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +71,6 @@ public class SelectStation extends AppCompatActivity {
                     selected = true;
                 }
                 else{
-
                     BitmapDrawable img = (BitmapDrawable) getResources().getDrawable(R.drawable.btn_srt2);
                     btn_srt.setImageDrawable(img);
                     selected = false;
@@ -60,14 +86,12 @@ public class SelectStation extends AppCompatActivity {
                     selected = true;
                 }
                 else{
-
                     BitmapDrawable img = (BitmapDrawable) getResources().getDrawable(R.drawable.btn_ko);
                     btn_korail.setImageDrawable(img);
                     selected = false;
                 }
             }
         });
-
 
 
 

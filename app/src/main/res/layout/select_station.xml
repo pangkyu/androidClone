@@ -207,6 +207,7 @@
                         android:layout_gravity="center">
 
                         <Button
+                            android:id="@+id/select_1"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -214,6 +215,8 @@
                             android:text="광주송정"
                             android:textColor="@color/black"/>
                         <Button
+
+                            android:id="@+id/select_2"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -221,6 +224,7 @@
                             android:text="김천구미"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_3"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -236,6 +240,7 @@
                         android:layout_gravity="center">
 
                         <Button
+                            android:id="@+id/select_4"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -243,6 +248,7 @@
                             android:text="나주"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_5"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -250,6 +256,7 @@
                             android:text="대전"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_6"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -265,6 +272,7 @@
                         android:layout_gravity="center">
 
                         <Button
+                            android:id="@+id/select_7"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -272,6 +280,7 @@
                             android:text="동탄"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_8"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -279,6 +288,7 @@
                             android:text="목포"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_9"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -294,6 +304,7 @@
                         android:layout_gravity="center">
 
                         <Button
+                            android:id="@+id/select_10"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -301,6 +312,7 @@
                             android:text="수서"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_11"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -308,6 +320,7 @@
                             android:text="신경주"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_12"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -323,6 +336,7 @@
                         android:layout_gravity="center">
 
                         <Button
+                            android:id="@+id/select_13"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -330,6 +344,7 @@
                             android:text="울산(통도사)"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_14"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -337,6 +352,7 @@
                             android:text="익산"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_15"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -352,6 +368,7 @@
                         android:layout_gravity="center">
 
                         <Button
+                            android:id="@+id/select_16"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
@@ -359,6 +376,7 @@
                             android:text="평택지제"
                             android:textColor="@color/black"/>
                         <Button
+                            android:id="@+id/select_17"
                             android:layout_weight="1"
                             android:background="@drawable/button"
                             android:layout_width="wrap_content"
