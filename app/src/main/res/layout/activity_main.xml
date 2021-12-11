@@ -234,11 +234,13 @@
                     android:padding="8sp">
 
                     <Button
+                        android:id="@+id/type1_minus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
                         android:text="-"/>
                     <TextView
+                        android:id="@+id/type1"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -246,6 +248,7 @@
                         android:textColor="@color/black"
                         android:gravity="center"/>
                     <Button
+                        android:id="@+id/type1_plus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -272,11 +275,13 @@
                     android:padding="8sp">
 
                     <Button
-                        android:layout_width="35sp"
+                        android:id="@+id/type2_minus"
+                        android:layout_width="31dp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
-                        android:text="-"/>
+                        android:text="-" />
                     <TextView
+                        android:id="@+id/type2"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -284,6 +289,7 @@
                         android:textColor="@color/black"
                         android:gravity="center"/>
                     <Button
+                        android:id="@+id/type2_plus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -310,11 +316,13 @@
                     android:padding="8sp">
 
                     <Button
+                        android:id="@+id/type3_minus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
                         android:text="-"/>
                     <TextView
+                        android:id="@+id/type3"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -322,6 +330,7 @@
                         android:textColor="@color/black"
                         android:gravity="center"/>
                     <Button
+                        android:id="@+id/type3_plus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -356,11 +365,13 @@
                     android:padding="8sp">
 
                     <Button
+                        android:id="@+id/type4_minus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
                         android:text="-"/>
                     <TextView
+                        android:id="@+id/type4"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -368,6 +379,7 @@
                         android:textColor="@color/black"
                         android:gravity="center"/>
                     <Button
+                        android:id="@+id/type4_plus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -383,6 +395,7 @@
                 android:layout_weight="1">
 
                 <TextView
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="경증장애인"
@@ -394,11 +407,13 @@
                     android:padding="8sp">
 
                     <Button
+                        android:id="@+id/type5_minus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
                         android:text="-"/>
                     <TextView
+                        android:id="@+id/type5"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -406,6 +421,7 @@
                         android:textColor="@color/black"
                         android:gravity="center"/>
                     <Button
+                        android:id="@+id/type5_plus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -432,11 +448,13 @@
                     android:padding="8sp">
 
                     <Button
+                        android:id="@+id/type6_minus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
                         android:text="-"/>
                     <TextView
+                        android:id="@+id/type6"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -444,6 +462,7 @@
                         android:textColor="@color/black"
                         android:gravity="center"/>
                     <Button
+                        android:id="@+id/type6_plus"
                         android:layout_width="35sp"
                         android:layout_height="35sp"
                         android:layout_weight="1"
@@ -457,6 +476,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
             >
 
             <LinearLayout

@@ -17,6 +17,16 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    private TextView type1, type2, type3, type4, type5, type6;
+    private Button type1_minus, type1_plus, type2_minus, type2_plus, type3_minus, type3_plus, type4_minus, type4_plus, type5_minus, type5_plus, type6_minus, type6_plus;
+    private int count1 = 0;
+    private int count2 = 0;
+    private int count3 = 0;
+    private int count4 = 0;
+    private int count5 = 0;
+    private int count6 = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,6 +106,129 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SelectStation.class);
                 startActivity(intent);
+            }
+        });
+
+
+        // 인원수 +, - 섹션
+        type1_minus = (Button) findViewById(R.id.type1_minus);
+        type1_plus = (Button) findViewById(R.id.type1_plus);
+        type2_minus = (Button)findViewById(R.id.type2_minus);
+        type2_plus = (Button)findViewById(R.id.type2_plus);
+        type3_minus = (Button)findViewById(R.id.type3_minus);
+        type3_plus =(Button) findViewById(R.id.type3_plus);
+        type4_minus = (Button)findViewById(R.id.type4_minus);
+        type4_plus = (Button)findViewById(R.id.type4_plus);
+        type5_minus = (Button)findViewById(R.id.type5_minus);
+        type5_plus = (Button)findViewById(R.id.type5_plus);
+        type6_minus = (Button)findViewById(R.id.type6_minus);
+        type6_plus = (Button)findViewById(R.id.type6_plus);
+        type1 = (TextView)findViewById(R.id.type1);
+        type2 = (TextView)findViewById(R.id.type2);
+        type3 = (TextView)findViewById(R.id.type3);
+        type4 = (TextView)findViewById(R.id.type4);
+        type5 = (TextView)findViewById(R.id.type5);
+        type6 = (TextView)findViewById(R.id.type6);
+
+        type1_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count1++;
+                type1.setText(count1+"");
+            }
+        });
+        type1_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(count1>0){
+                count1--;
+                type1.setText(count1+"");
+
+                }
+            }
+        });
+
+        type2_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count2++;
+                type2.setText(count2+"");
+            }
+        });
+        type2_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(count2>0){
+                    count2--;
+                    type2.setText(count2+"");
+                }
+            }
+        });
+        type3_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count3++;
+                type3.setText(count3+"");
+            }
+        });
+        type3_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(count3>0) {
+                    count3--;
+                    type3.setText(count3 + "");
+                }
+            }
+        });
+        type4_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count4++;
+                type4.setText(count4+"");
+            }
+        });
+        type4_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(count4>0){
+                    count4--;
+                    type4.setText(count4+"");
+                }
+
+            }
+        });
+
+        type5_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count5++;
+                type5.setText(count5+"");
+            }
+        });
+        type5_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(count5>0){
+                    count5--;
+                    type5.setText(count5+"");
+                }
+            }
+        });
+
+        type6_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count6++;
+                type6.setText(count6+"");
+            }
+        });
+        type6_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(count6>0){
+                    count6--;
+                    type6.setText(count6+"");
+                }
             }
         });
     }

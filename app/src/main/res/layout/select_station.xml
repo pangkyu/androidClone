@@ -99,6 +99,7 @@
                         android:textSize="10sp"
                         android:textColor="#7f8c8d" />
                     <Button
+                        android:id="@+id/start_station"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:background="@color/background2"
@@ -108,6 +109,7 @@
                         android:text="광주송정"/>
                 </LinearLayout>
                 <ImageView
+                    android:id="@+id/change_station"
                     android:layout_width="30dp"
                     android:layout_height="100dp"
                     android:src = "@drawable/change"/>
@@ -126,6 +128,7 @@
 
                         android:textColor="#7f8c8d"/>
                     <Button
+                        android:id="@+id/end_station"
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
                         android:background="@color/background2"
@@ -165,10 +168,11 @@
                         android:gravity="center">
 
                         <ImageButton
+                            android:id="@+id/btn_srt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:src="@drawable/btn_srt"
+                            android:src="@drawable/btn_srt2"
                             android:background="@color/white"/>
                     </LinearLayout>
                     <LinearLayout
@@ -178,11 +182,13 @@
                         android:layout_height="40dp"
                         android:background="@drawable/button">
 
+
                         <ImageButton
+                            android:id="@+id/btn_korail"
                             android:layout_gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/select_ko"
+                            android:src="@drawable/btn_ko2"
                             android:background="@color/white"/>
                     </LinearLayout>
 
