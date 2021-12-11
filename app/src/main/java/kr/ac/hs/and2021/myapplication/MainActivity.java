@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         header_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SrtQuickMenu.class);
+                Intent intent = new Intent(getApplicationContext(), List.class);
                 startActivity(intent);
             }
         });
@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), StartDay.class);
                 startActivity(intent);
+
             }
         });
 
@@ -76,6 +77,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 showTravelDialog();
+            }
+        });
+
+        // 출발 / 왕복 섹션 이벤트 리스너
+        Button start_section = (Button) findViewById(R.id.start_section);
+        Button end_section = (Button) findViewById(R.id.end_section);
+
+        start_section.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SelectStation.class);
+                startActivity(intent);
+            }
+        });
+        end_section.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SelectStation.class);
+                startActivity(intent);
             }
         });
     }

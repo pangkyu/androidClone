@@ -118,6 +118,8 @@
                     android:textSize="10sp"
                     android:textColor="#7f8c8d" />
                 <Button
+
+                    android:id="@+id/start_section"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:background="#ffffff"
@@ -131,6 +133,7 @@
                 android:layout_height="100dp"
                 android:src = "@drawable/change"/>
             <LinearLayout
+
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:background="@color/white"
@@ -144,6 +147,7 @@
                     android:textSize="10dp"
                     android:textColor="#7f8c8d"/>
                 <Button
+                    android:id="@+id/end_section"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:background="#ffffff"

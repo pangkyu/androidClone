@@ -17,7 +17,7 @@ public class Tickets extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.check_ticket);
+        setContentView(R.layout.tickets);
 
         // footer바 이벤트
         TextView travel_menu = (TextView) findViewById(R.id.travel_menu);

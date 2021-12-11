@@ -18,10 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SrtQuickMenu"/>
+        <!--<activity android:name=".SrtQuickMenu"/>-->
+        <activity android:name=".List"/>
         <activity android:name=".StartDay"/>
         <activity android:name=".CheckTicket"/>
         <activity android:name=".Tickets"/>
+        <activity android:name=".SelectStation"/>
 
     </application>
 
