@@ -19,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SelectStation extends AppCompatActivity {
 
     ImageView change_station;
-    TextView start_station, end_station;
+    Button start_station, end_station;
     boolean changebtn, selected, start, end;
     String str_start, str_end;
     ImageButton btn_srt, btn_korail;
@@ -31,24 +31,24 @@ public class SelectStation extends AppCompatActivity {
         setContentView(R.layout.select_station);
 
         ImageView change_station = (ImageView) findViewById(R.id.change_station);
-        TextView start_station = (TextView) findViewById(R.id.start_station);
-        TextView end_station = (TextView) findViewById(R.id.end_station);
+        Button start_station = (Button) findViewById(R.id.start_station);
+        Button end_station = (Button) findViewById(R.id.end_station);
         ImageButton btn_srt = (ImageButton) findViewById(R.id.btn_srt);
         ImageButton btn_korail = (ImageButton) findViewById(R.id.btn_korail);
 
-        // 교환섹션 이벤트 리스너
-        start_station.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                start = true;
-            }
-        });
-        end_station.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                end = true;
-            }
-        });
+//        // 교환섹션 이벤트 리스너
+//        start_station.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                start = true;
+//            }
+//        });
+//        end_station.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                end = true;
+//            }
+//        });
         change_station.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,8 +94,127 @@ public class SelectStation extends AppCompatActivity {
         });
 
 
+        start_station.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Button start_station = (Button) findViewById(R.id.start_station);
+
+                switch (view.getId()){
+                    case R.id.select_1:
+                        start_station.setText("광주송정");
+                        break;
+                    case R.id.select_2:
+                        start_station.setText("김천구미");
+                        break;
+                    case R.id.select_3:
+                        start_station.setText("공주");
+                        break;
+                    case R.id.select_4:
+                        start_station.setText("나주");
+                        break;
+                    case R.id.select_5:
+                        start_station.setText("대전");
+                        break;
+                    case R.id.select_6:
+                        start_station.setText("동대구");
+                        break;
+                    case R.id.select_7:
+                        start_station.setText("동탄");
+                        break;
+                    case R.id.select_8:
+                        start_station.setText("목포");
+                        break;
+                    case R.id.select_9:
+                        start_station.setText("부산");
+                        break;
+                    case R.id.select_10:
+                        start_station.setText("수서");
+                        break;
+                    case R.id.select_11:
+                        start_station.setText("신경주");
+                        break;
+                    case R.id.select_12:
+                        start_station.setText("오송");
+                        break;
+                    case R.id.select_13:
+                        start_station.setText("울산(통도사)");
+                        break;
+                    case R.id.select_14:
+                        start_station.setText("익산");
+                        break;
+                    case R.id.select_15:
+                        start_station.setText("정읍");
+                        break;
+                    case R.id.select_16:
+                        start_station.setText("평택지제");
+                        break;
+                    case R.id.select_17:
+                        start_station.setText("천안아산");
+                        break;
+                }
+            }
+        });
+
+
 
     }
+//
+//    public void onButtonClick(View view){
+//        Button start_station = (Button) findViewById(R.id.start_station);
+//        switch (view.getId()){
+//            case R.id.select_1:
+//                start_station.setText("광주송정");
+//                break;
+//            case R.id.select_2:
+//                start_station.setText("김천구미");
+//                break;
+//            case R.id.select_3:
+//                start_station.setText("공주");
+//                break;
+//            case R.id.select_4:
+//                start_station.setText("나주");
+//                break;
+//            case R.id.select_5:
+//                start_station.setText("대전");
+//                break;
+//            case R.id.select_6:
+//                start_station.setText("동대구");
+//                break;
+//            case R.id.select_7:
+//                start_station.setText("동탄");
+//                break;
+//            case R.id.select_8:
+//                start_station.setText("목포");
+//                break;
+//            case R.id.select_9:
+//                start_station.setText("부산");
+//                break;
+//            case R.id.select_10:
+//                start_station.setText("수서");
+//                break;
+//            case R.id.select_11:
+//                start_station.setText("신경주");
+//                break;
+//            case R.id.select_12:
+//                start_station.setText("오송");
+//                break;
+//            case R.id.select_13:
+//                start_station.setText("울산(통도사)");
+//                break;
+//            case R.id.select_14:
+//                start_station.setText("익산");
+//                break;
+//            case R.id.select_15:
+//                start_station.setText("정읍");
+//                break;
+//            case R.id.select_16:
+//                start_station.setText("평택지제");
+//                break;
+//            case R.id.select_17:
+//                start_station.setText("천안아산");
+//                break;
+//        }
+//    }
     public void onClick(View view){
         finish();
     }
