@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -17,7 +18,7 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    ImageView refresh;
     private TextView type1, type2, type3, type4, type5, type6;
     private Button type1_minus, type1_plus, type2_minus, type2_plus, type3_minus, type3_plus, type4_minus, type4_plus, type5_minus, type5_plus, type6_minus, type6_plus;
     private int count1 = 0;
@@ -231,6 +232,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        refresh = (ImageView) findViewById(R.id.refresh);
     }
 
     // srt챗봇 메시지를 보여주는 함수

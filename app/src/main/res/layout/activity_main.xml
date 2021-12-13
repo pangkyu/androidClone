@@ -203,6 +203,11 @@
                     android:layout_height="wrap_content"
                     android:text="이후"
                     android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/refresh"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src = "@drawable/change"/>
             </LinearLayout>
         </LinearLayout>
 
